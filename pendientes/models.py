@@ -9,3 +9,13 @@ class Tarea(models.Model):
 
     def __str__(self):
         return "Tarea: " + self.titulo
+
+class Receta(models.Model):
+    ingredientes = models.CharField(max_length=100) #Campo/columna titulo de tipo "campo de caracteres" de longitud maxima de 100
+    porcion = models.CharField(max_length=100) #Campo/columna titulo de tipo Texto, los argumentos blank y null son para que el campo sea opcional
+    produccion = models.CharField(max_length=100)
+    precios = models.CharField(max_length=100)
+    costo_total = models.CharField(max_length=100)
+
+    def __str__(self):
+        return "Ingrediente: " + self.ingredientes
