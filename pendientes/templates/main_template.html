@@ -49,6 +49,7 @@
 </head>
 
 <body>
+  <div id="preloader"></div>
 
   <!--==========================
   Hero Section
@@ -57,14 +58,14 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="{% static 'img/logo.png' %}" alt="Imperial">
+          <img class="" src="img/logo.png" alt="Karu">
         </div>
 
-        <h1>Welcome to Imperial studios</h1>
-        <h2>We create <span class="rotating">beautiful graphics, functional websites, working mobile apps</span></h2>
+        <h1>No jugamos con la comida</h1>
+        <h2>Nosotros <span class="rotating">cuidamos los alimentos, amamos los alimentos, comemos más, ahorramos más</span></h2>
         <div class="actions">
-          <a href="#about" class="btn-get-started">Get Strated</a>
-          <a href="#services" class="btn-services">Our Services</a>
+          <a href="#about" class="btn-get-started">Empecemos</a>
+          <a href="#services" class="btn-services">Que hacemos?</a>
         </div>
       </div>
     </div>
@@ -81,35 +82,18 @@
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
-      {% block content %}	
-      {% load staticfiles %}	
-      {% endblock content %}
+
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="menu-has-children"><a href="#">Drop Down 2</a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-              <li><a href="#">Drop Down 5</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li class="menu-active"><a href="#hero">Inicio</a></li>
+          <li><a href="#about">Hablemos más</a></li>
+          <li><a href="#services">Hacemos</a></li>
+          <li><a href="#portfolio">Portafolio</a></li>
+          <li><a href="#testimonials">Testimonios</a></li>
+          <li><a href="#team">Tu equipo</a></li>
+            
+          
+          <li><a href="#contact">Contactanos</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -124,9 +108,9 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">About Us</h3>
+          <h3 class="section-title">Que hacemos?</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+          <p class="section-description">Somos un grupo amante de la rica comida de nuestro pais con ganas de alimentar mucho más</p>
         </div>
       </div>
     </div>
@@ -138,21 +122,19 @@
         </div>
 
         <div class="col-md-6 about-content">
-          <h2 class="about-title">We provide great services and ideass</h2>
+          <h2 class="about-title">Lo mejor que hacemos es cuidar los alimentos</h2>
           <p class="about-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-            in reprehenderit in voluptate
+            Dentro de un pais con tanta riquesas en paisajes, agua y gente tan formidable hemos visto que existen lados oscuros basados en información publica y accesible.
           </p>
           <p class="about-text">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-            id est laborum
+            Paraguay figura en el lugar número seis entre los países con mayor porcentaje de subalimentación, según cifras de la Organización de las Naciones Unidas para la Alimentación y la Agricultura (FAO), de 2017.
           </p>
           <p class="about-text">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.
-          </p>
+            Comparando 2017 con 2016, el número de personas subalimentadas en la región aumentó en 400.000 personas
+            y teniendo muy en cuenta que los demás paises en la lista son paises vecinos, buscamos el mejor camino a que todo sea mejor. </p>
         </div>
       </div>
-    </div>
+    </div>s
   </section>
 
   <!--==========================
@@ -210,11 +192,11 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-8">
-          <h3 class="subscribe-title">Subscribe For Updates</h3>
+          <h3 class="subscribe-title">Subscribite para </h3>
           <p class="subscribe-text">Join our 1000+ subscribers and get access to the latest tools, freebies, product announcements and much more!</p>
         </div>
         <div class="col-md-4 subscribe-btn-container">
-          <a class="subscribe-btn" href="#">Subscribe Now</a>
+          <a class="subscribe-btn" href="#">Subscribete</a>
         </div>
       </div>
     </div>
@@ -502,7 +484,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="copyright">
-            &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            &copy; Copyright <strong>Team Karu Paraguay</strong>. TODOS los derechos reservados TOODOS! (los izquierdos tambien)
           </div>
           <div class="credits">
             <!--
@@ -511,7 +493,7 @@
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
             -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="https://bootstrapmade.com/">Karu atyguasu</a>
           </div>
         </div>
       </div>
