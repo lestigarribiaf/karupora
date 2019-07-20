@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -7,36 +8,36 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
-
+  
   <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
   <meta property="og:title" content="">
   <meta property="og:image" content="">
   <meta property="og:url" content="">
-  <meta property="og:site_name" content="">
+  <meta property="og:site_name" content=""> 	
   <meta property="og:description" content="">
-
+  {% load static %}
   <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="">
   <meta name="twitter:title" content="">
   <meta name="twitter:description" content="">
   <meta name="twitter:image" content="">
-
+  
   <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
   <link href="favicon.ico" rel="shortcut icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="{% static 'https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800' " rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="lib/animate-css/animate.min.css" rel="stylesheet">
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate-css/animate.min.css' %}" rel="stylesheet">
 
   <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
   <!-- =======================================================
     Theme Name: Imperial
@@ -44,10 +45,10 @@
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
+  
 </head>
 
 <body>
-  <div id="preloader"></div>
 
   <!--==========================
   Hero Section
@@ -56,7 +57,7 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/logo.png" alt="Imperial">
+          <img class="" src="{% static 'img/logo.png' %}" alt="Imperial">
         </div>
 
         <h1>Welcome to Imperial studios</h1>
@@ -80,7 +81,9 @@
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
-
+      {% block content %}	
+      {% load staticfiles %}	
+      {% endblock content %}
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#hero">Home</a></li>

@@ -4,9 +4,14 @@
     <title>Mi pagina de prueba</title>
   </head>
   <body>
-    <img src="images/firefox-icon.png" alt="Mi imagen de prueba">
+    {% extends 'main_template.html'%} 
+    
+	{% block content %}	
+	{% load static %}
+	<img src="static/images/firefox-icon.png" alt="Mi imagen de prueba">
 	{% for x in name %}
         <li> {{ x }} </li>
     {% endfor %}
+	{% endblock content %}	
   </body>
 </html>
