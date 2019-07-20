@@ -49,7 +49,6 @@
 </head>
 
 <body>
-  <div id="preloader"></div>
 
   <!--==========================
   Hero Section
@@ -58,7 +57,7 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/logo.png" alt="Karu">
+          <img class="" src="{% static 'img/logo.png' %}" alt="Karu">
         </div>
 
         <h1>No jugamos con la comida</h1>
@@ -78,7 +77,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/logo.png" alt="" title="" /></img></a>
+        <a href="#hero"><img src="/static/img/logo.png" alt="" title="" /></img></a>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
@@ -118,7 +117,7 @@
       <div class="row">
 
         <div class="col-lg-6 about-img">
-          <img src="img/about-img.jpg" alt="">
+          <img src="/static/img/about-img.jpg" alt="">
         </div>
 
         <div class="col-md-6 about-content">
@@ -299,7 +298,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Testimonials</h3>
+          <h3 class="section-title">Testimonios</h3>
           <div class="section-title-divider"></div>
           <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
         </div>
@@ -308,14 +307,14 @@
       <div class="row">
         <div class="col-md-3">
           <div class="profile">
-            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <div class="pic"><img src="/static/img/client-1.jpg" alt=""></div>
             <h4>Saul Goodman</h4>
             <span>Lawless Inc</span>
           </div>
         </div>
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small>
+            <b><img src="/static/img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="/static/img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
       </div>
@@ -323,12 +322,12 @@
       <div class="row">
         <div class="col-md-9">
           <div class="quote">
-            <b><img src="img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="img/quote_sign_right.png" alt=""></small>
+            <b><img src="/static/img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="/static/img/quote_sign_right.png" alt=""></small>
           </div>
         </div>
         <div class="col-md-3">
           <div class="profile">
-            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <div class="pic"><img src="/static/img/client-2.jpg" alt=""></div>
             <h4>Sara Wilsson</h4>
             <span>Odeo Inc</span>
           </div>
@@ -345,65 +344,80 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Our Team</h3>
+          <h3 class="section-title">Nuestro equipo!</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description"></p>
         </div>
       </div>
 
       <div class="row">
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="img/team-1.jpg" alt=""></div>
-            <h4>Walter White</h4>
+            <div class="pic"><img src="/static/img/team-1.jpg" alt=""></div>
+            <h4>liliana Estigarribia</h4>
             <span>Chief Executive Officer</span>
             <div class="social">
               <a href=""><i class="fa fa-twitter"></i></a>
               <a href=""><i class="fa fa-facebook"></i></a>
               <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <div class="member">
+              <div class="pic"><img src="/static/img/team-1.jpg" alt=""></div>
+              <h4>Steven Britez</h4>
+              <span>Chief Executive Officer</span>
+              <div class="social">
+                <a href=""><i class="fa fa-twitter"></i></a>
+                <a href=""><i class="fa fa-facebook"></i></a>
+                <a href=""><i class="fa fa-google-plus"></i></a>
+          
+              </div>
+            </div>
+          </div>
+
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="/static/img/team-2.jpg" alt=""></div>
+            <h4>Fabio Bulacios</h4>
+            <span>Chief Future Officer</span>
+            <div class="social">
+ 
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+ 
             </div>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="img/team-2.jpg" alt=""></div>
-            <h4>Sarah Jhinson</h4>
+            <div class="pic"><img src="/static/img/team-3.jpg" alt=""></div>
+            <h4>Fatima Benitez</h4>
             <span>Product Manager</span>
             <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
+
               <a href=""><i class="fa fa-facebook"></i></a>
               <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
+
             </div>
           </div>
         </div>
 
         <div class="col-md-3">
           <div class="member">
-            <div class="pic"><img src="img/team-3.jpg" alt=""></div>
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="member">
-            <div class="pic"><img src="img/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
+            <div class="pic"><img src="/static/img/team-4.jpg" alt=""></div>
+            <h4>Mabel Rojas</h4>
             <span>Accountant</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
+            <div class="social">              
+  
               <a href=""><i class="fa fa-facebook"></i></a>
               <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
+
             </div>
           </div>
         </div>
@@ -419,9 +433,9 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Contact Us</h3>
+          <h3 class="section-title"> Contactanos! </h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p class="section-description">Estamos abiertos a ayudar y mejorar, mandanos un mensajito! </p>
         </div>
       </div>
 
@@ -430,17 +444,17 @@
           <div class="info">
             <div>
               <i class="fa fa-map-marker"></i>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+              <p>Paraguay</p>
             </div>
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>info@example.com</p>
+              <p>karu_paraguay@hotmail.com</p>
             </div>
 
             <div>
               <i class="fa fa-phone"></i>
-              <p>+1 5589 55488 55s</p>
+              <p>+595 984 355 755</p>
             </div>
 
           </div>
@@ -448,7 +462,7 @@
 
         <div class="col-md-5 col-md-push-2">
           <div class="form">
-            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="sendmessage">Mil gracias!</div>
             <div id="errormessage"></div>
             <form action="" method="post" role="form" class="contactForm">
               <div class="form-group">
@@ -467,7 +481,7 @@
                 <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Escribinos un mensaje</button></div>
             </form>
           </div>
         </div>
@@ -504,17 +518,17 @@
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
   <!-- Required JavaScript Libraries -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script src="lib/superfish/hoverIntent.js"></script>
-  <script src="lib/superfish/superfish.min.js"></script>
-  <script src="lib/morphext/morphext.min.js"></script>
-  <script src="lib/wow/wow.min.js"></script>
-  <script src="lib/stickyjs/sticky.js"></script>
-  <script src="lib/easing/easing.js"></script>
+  <script src="/static/lib/jquery/jquery.min.js"></script>
+  <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/static/lib/superfish/hoverIntent.js"></script>
+  <script src="/static/lib/superfish/superfish.min.js"></script>
+  <script src="/static/lib/morphext/morphext.min.js"></script>
+  <script src="/static/lib/wow/wow.min.js"></script>
+  <script src="/static/lib/stickyjs/sticky.js"></script>
+  <script src="/static/lib/easing/easing.js"></script>
 
   <!-- Template Specisifc Custom Javascript File -->
-  <script src="js/custom.js"></script>
+  <script src="/static/js/custom.js"></script>
 
   <script src="contactform/contactform.js"></script>
 
