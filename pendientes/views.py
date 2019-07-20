@@ -10,6 +10,8 @@ def index(request):
 
 def recetas(request):
     lista = Receta.objects.all()
-
     listita = {'name':lista}
+    recorrido = 0
+    for x in lista:
+        recorrido = x
     return render(request, 'index.html', listita)
