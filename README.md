@@ -1,11 +1,11 @@
-# Django TODO template
+# KARU PORÃ
 
-### Cosas que no vamos a ver aca pero que estaria bueno que investiguen
+### Sitio de Consultas de Recetas y Planeamiento Semanal > addons:
 
-* Configurar bases de datos
-* instalar y correr todo en un `virtualenv`
-* deployment correcto con un servidor
-* Correcto manejo de URLs entre distintas apps
+* Listado de Recetas.
+* Vista de Recetas individual > Lista + preparacion + ingredientes
+* Planeamiento semanal.
+* Calculo de precios aproximados.
 
 ### Pasos que se siguieron para llegar a este punto
 * En la terminal:
