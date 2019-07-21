@@ -29,7 +29,7 @@ class Receta(models.Model):
     nombre_receta = models.CharField(max_length=100)
     porciones = models.IntegerField(null=True, blank=True)
     insumos = models.ManyToManyField(Insumo)
-    imagen = models.ImageField(upload_to=settings.MEDIA_ROOT, blank=True, null=True)
+   # imagen = models.ImageField(upload_to=settings.MEDIA_ROOT, blank=True, null=True)
    # externalURL = models.URLField(blank=True)
     
    # def url(self):
