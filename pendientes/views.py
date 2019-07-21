@@ -15,3 +15,7 @@ def recetas(request):
     for x in lista:
         recorrido = x
     return render(request, 'index.html', listita)
+
+def registro(request):
+        return render(request, 'registro.html')
+
