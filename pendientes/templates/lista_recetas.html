@@ -74,7 +74,7 @@
             
           
           <li><a href="#contact">Contactanos</a></li>
-          <li><a href="/registro">Registro</a></li>
+         <!-- <li><a href="/registro">Registro</a></li>-->
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -84,23 +84,54 @@
 
   <!--==========================
   About Section
-  ============================-->
+  ============================
   <section id="about">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Registro</h3>
+          <h3 class="section-title">LISTA DE RECETAS DISPONIBLES PARA ELEGIR</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">Registrate en Karu!</p>
+          <p class="section-description">Aca iria la lista de la class Recetas!</p>
         </div>
       </div>
     </div>
     <div class="container about-container wow fadeInUp">
       <div class="row">
-CONTENIDO      </div>
-    </div>s
-  </section>
+      </div>
+    </div>
+  </section>-->
 
+
+  <!--==========================
+  Porfolio Section
+  ============================-->
+  
+  <section id="portfolio">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">LISTA DE RECETAS DISPONIBLES PARA ELEGIR</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Hell yeah! It is working. Pretty cool, huh?</p>
+        </div>
+      </div>  
+      {% block content %}
+      
+      <div class="row">
+        <div class="col-md-3">
+          <a class="portfolio-item" style="background-image: url(/static/img/portfolio-1.jpg);" href="">
+            {% for list in Recetas %}
+            <div class="details">
+              <h4>{{list.nombre_receta}}</h4>
+              <span>Alored dono par</span>
+            </div>
+            {% endfor %}
+          </a>
+        </div>
+        {% endblock %}
+      </div>
+    </div>
+    </section>
   <!--==========================
   Footer
 ============================-->
