@@ -25,5 +25,5 @@ def lista_recetas(request):
         context = {
                 "lista_objetos" : queryset
         }
-        return render(request, 'lista_recetas.html')
+        return render(request, 'lista_recetas.html', context)
 
