@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from pendientes.models import Receta
-
 # Create your views here.
 
 def index(request):
@@ -21,5 +20,10 @@ def recetas(request):
 def registro(request):
         return render(request, 'registro.html')
 
-
+def lista_recetas(request):
+        queryset = Receta.objects.all() #lista de los objetos
+        context = {
+                "lista_objetos" : queryset
+        }
+        return render(request, 'lista_recetas.html', context)
 

@@ -1,6 +1,10 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.utils.safestring import mark_safe
+from django.conf import settings
 
+MEDIA_ROOT = 'C:/Users/Admin/Desktop/karupora/pendientes/static/img'
+MEDIA_URL = '/static/img'
 # Create your models here.
 
 class Unidad(models.Model):
@@ -25,5 +29,21 @@ class Receta(models.Model):
     nombre_receta = models.CharField(max_length=100)
     porciones = models.IntegerField(null=True, blank=True)
     insumos = models.ManyToManyField(Insumo)
+    #imagen = models.ImageField(upload_to=settings.MEDIA_ROOT, blank=True)
+   # externalURL = models.URLField(blank=True)
+    
+   # def url(self):
+        # returns a URL for either internal stored or external image url
+   #     if self.externalURL:
+    #        return self.externalURL
+     #   else:
+            # is this the best way to do this??
+      #      return os.path.join('/',settings.MEDIA_URL, os.path.basename(str(self.imagen)))
+
+    #def image_tag(self):
+        # used in the admin site model as a "thumbnail"
+   #     return mark_safe('<img src="{}" width="150" height="150" />'.format(self.url()) )
+   # image_tag.short_description = 'Recetas'    
+
     def __str__(self):
         return self.nombre_receta
