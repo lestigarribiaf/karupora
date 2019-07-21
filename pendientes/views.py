@@ -5,8 +5,10 @@ from pendientes.models import Receta
 # Create your views here.
 
 def index(request):
-    saludo = "<h1> Hola, Mundo! </h1> Esta es la raiz / Tuhermanaentanga"
-    return HttpResponse(saludo) #retornamos el saludo
+    usuario = request.GET.get("user")
+    print(request.GET)
+    saludo = "<h1> Hola, Mundo! </h1> Esta es la raiz "
+    return HttpResponse(usuario) #retornamos el saludo
 
 def recetas(request):
     lista = Receta.objects.all()
