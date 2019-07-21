@@ -27,3 +27,7 @@ def lista_recetas(request):
         }
         return render(request, 'lista_recetas.html', context)
 
+def receta_detalles(request, num):
+        receta = Receta.objects.get(id=num)
+
+        return HttpResponse(receta)
