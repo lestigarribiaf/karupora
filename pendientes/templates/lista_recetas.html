@@ -55,7 +55,7 @@
   ============================-->
   <header id="header">
     <div class="container">
-
+         <!-- CSS Para Expand-->
       <div id="logo" class="pull-left">
         <a href="/recetas"><img src="/static/img/logo3.png" alt="logo Karu" /></img></a>
         <!-- Uncomment below if you prefer to use a text image -->
@@ -105,7 +105,8 @@
   <!--==========================
   Porfolio Section
   ============================-->
-  
+  {% block content %}
+  {% for list in lista_objetos %}
   <section id="portfolio">
     <div class="container wow fadeInUp">
       <div class="row">
@@ -115,19 +116,20 @@
           <p class="section-description">Hell yeah! It is working. Pretty cool, huh?</p>
         </div>
       </div>  
-      {% block content %}
       
+      <h4> "RECETA" {{list.nombre_receta}}</h4>
       <div class="row">
         <div class="col-md-3">
           <a class="portfolio-item" style="background-image: url(/static/img/portfolio-1.jpg);" href="">
-            {% for list in Recetas %}
+            
             <div class="details">
-              <h4>{{list.nombre_receta}}</h4>
-              <span>Alored dono par</span>
+              <h4></h4>
+              <span>{{list.nombre_receta}}</span>
             </div>
             {% endfor %}
           </a>
         </div>
+        {{list.nombre_receta}}
         {% endblock %}
       </div>
     </div>
