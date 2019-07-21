@@ -18,6 +18,7 @@ from django.urls import path
 from pendientes import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
@@ -26,5 +27,5 @@ urlpatterns = [
     path('recetas/', views.recetas, name='recetas'),
     path('registro/', views.registro, name='registro'),
     path('lista_recetas/', views.lista_recetas, name='lista_recetas'),
-    #static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-]
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
