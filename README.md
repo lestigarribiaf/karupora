@@ -10,15 +10,19 @@
 ### Objetivos de disenho: 
 
 * Cargar todas las skins. (Editar Textos, Subir imagenes)
-* Editar : Boton Subscribe. Fondo y colores.
-* Subir todas las fotex con nuestros rostros umia.
+* 
 
 ### Objetivos de funcionalidad: 
 
-* Averiguar OnClick expand en Jquery para aparecer en la lista del OnClic
-* Hacer que en 127.0.0.1:8000/lista_recetas pueda aparecer el listado de recetas ( o hacer el OnClic en el home)
-* Como hacer que en el Jquery muestre info tomada desde las tablas de la bd. 
-* Calculo de precios aproximados.
+* Subir imagenes de la lista dentro del /admin
+* Trazar nueva template para Vista Receta Individual
+* Hacer que estire en el menu planificacion los valores de comidas + buscador
+
+### Objetivos de Marketing: 
+
+* Portada /
+* Invitar a tus amigos
+* Subir todas las fotex con nuestros rostros umia.
 
 ### Pasos que se siguieron para llegar a este punto
 * En la terminal:
