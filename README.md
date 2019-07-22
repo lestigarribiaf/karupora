@@ -10,7 +10,9 @@
 ### Objetivos de disenho: 
 
 * Cargar todas las skins. (Editar Textos, Subir imagenes)
-* Subida de imagenes en el sitio
+* Subida completa (complet)
+* Completado karupora 
+ 
 
 ### Objetivos de funcionalidad: 
 
