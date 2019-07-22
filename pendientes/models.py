@@ -9,6 +9,7 @@ MEDIA_URL = '/static/img'
 
 class Unidad(models.Model):
     nombre_unidad = models.CharField(max_length=100)
+
     siglas_unidad = models.CharField(max_length=10)
     def __str__(self):
         return self.nombre_unidad
