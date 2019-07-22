@@ -36,3 +36,5 @@ def receta_detalles(request, num):
         receta = Receta.objects.get(id=num)
 
         return render(request, 'vista_receta.html', {"receta":receta})
+
+
