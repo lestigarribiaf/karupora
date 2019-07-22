@@ -10,7 +10,7 @@
 ### Objetivos de disenho: 
 
 * Cargar todas las skins. (Editar Textos, Subir imagenes)
-* 
+* Subida de imagenes en el sitio
 
 ### Objetivos de funcionalidad: 
 
@@ -20,7 +20,7 @@
 
 ### Objetivos de Marketing: 
 
-* Portada /
+* Portada / Subida de imagenes en el sitio
 * Invitar a tus amigos
 * Subir todas las fotex con nuestros rostros umia.
 
