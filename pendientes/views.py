@@ -27,6 +27,9 @@ def lista_recetas(request):
         }
         return render(request, 'lista_recetas.html', context)
 
+
+def semanal(request):
+        return render(request, 'semanal.html')
 def receta_detalles(request, num):
         receta = Receta.objects.get(id=num)
 
