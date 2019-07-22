@@ -27,6 +27,6 @@ urlpatterns = [
     path('recetas/', views.recetas, name='recetas'),
     path('registro/', views.registro, name='registro'),
     path('lista_recetas/', views.lista_recetas, name='lista_recetas'),
-    path('recetas/<int:num>', views.receta_detalles, name="vista_recetas")
-
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('semanal/', views.semanal, name='semanal')
+    #static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
