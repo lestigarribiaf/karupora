@@ -30,7 +30,9 @@ def lista_recetas(request):
 
 def semanal(request):
         return render(request, 'semanal.html')
+
+
 def receta_detalles(request, num):
         receta = Receta.objects.get(id=num)
 
-        return HttpResponse(receta)
+        return render(request, 'vista_receta.html', {"receta":receta})
