@@ -1,4 +1,4 @@
-gifrom django.shortcuts import render
+from django.shortcuts import render
 from django.http import HttpResponse
 from pendientes.models import Receta
 # Create your views here.
@@ -35,10 +35,16 @@ def resumen(request):
         return render(request, 'resumen.html')
 
 
-
 def receta_detalles(request, num):
         receta = Receta.objects.get(id=num)
 
         return render(request, 'vista_receta.html', {"receta":receta})
+
+def busqueda(request, buscar):
+        buscarte = Receta.objects.filter(nombre_receta__icontains=buscar)
+        print (buscarte)        
+
+        return render(request, 'semanal.html' , {"busquedaes":buscarte})
+
 
 
