@@ -3,7 +3,7 @@
 ### Sitio de Consultas de Recetas y Planeamiento Semanal > addons:
 
 * Listado de Recetas. LISTO
-* Vista de Recetas individual > Lista + preparacion + ingredientes EN PROCESO
+* Vista de Recetas individual > Lista + preparacion + ingredientes LISTO
 * Planeamiento semanal. EN PROCESO
 * Calculo de precios aproximados. SI SOBRA TIEMPO
 
@@ -11,7 +11,7 @@
 
 * Cargar todas las skins. (Editar Textos, Subir imagenes) LISTO
 * Subida completa en facebook, instagram, y listado recetas LISTO 
-* 
+* Arreglar la web principal con los espaciados, verificar codigo section or div
 
 
 ### Objetivos de funcionalidad: 
@@ -19,7 +19,7 @@
 * Subir imagenes de la lista dentro del /admin LISTO
 * Trazar nueva template para Vista Receta Individual LISTO
 * Hacer que estire en el menu planificacion los valores de comidas + buscador TODAVIA 
-* 
+* Hacer que estire desde /semanal se pueda estirar los valores en un combo-box (for dentro del select-option-value)
 
 ### Objetivos de Marketing: 
 
@@ -27,7 +27,8 @@
 * Invitar a tus amigos TODAVIA
 * Subir todas las fotex con nuestros rostros umia. EN PROCESO
 
-### Pasos que se siguieron para llegar a este punto
+### Pasos para poder montar el mismo servicio en tu compu:
+
 * En la terminal:
 ```bash
 pip3 install django==2.2 #instalamos django con pip(manejador de paquetes de python)
@@ -65,45 +66,11 @@ INSTALLED_APPS = [
 LANGUAGE_CODE = 'es'
 ``` 
 
-* en `pendientes/models.py` creamos el modelo Tarea (modelo ~= tabla de la base de datos)
+* en `pendientes/models.py` creamos el modelo Recetas (modelo ~= tabla de la base de datos)
+
+* O si no, podes directamente clonar este repositorio. Navega hasta la carpeta donde vas a copiar y:
+
 
 ```python
-class Tarea(models.Model):
-    titulo = models.CharField(max_length=100) #Campo/columna titulo de tipo "campo de caracteres" de longitud maxima de 100
-    descripcion = models.TextField(null=True, blank=True) #Campo/columna titulo de tipo Texto, los argumentos blank y null son para que el campo sea opcional
-    estado = models.BooleanField(default=False)
+git clone https://github.com/lestigarribiaf/karupora.git
 ```
-
-* en `pendientes/admin.py` registramos nuestro modelo para poder usarlo en la interfaz de administracion
-
-```python
-from django.contrib import admin
-from .models import Tarea #importamos el modelo
-
-admin.site.register(Tarea) #lo registramos
-
-```
-
-* en `pendientes/views.py`
-
-```python
-from django.http import HttpResponse
-
-def index(request):
-    saludo = "Hola, Mundo! Esta es la raiz /"
-    return HttpResponse(saludo) #retornamos el saludo
-```
-
-* en `todolist/urls.py`
-
-```python
-from pendientes import views #importamos las vistas de la app/directorio pendientes
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.index, name='index'), #Creamos la ruta raiz '' y la enlazamos con nuestra vista index del archivo views.py
-]
-
-```
-
-
