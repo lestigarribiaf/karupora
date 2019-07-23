@@ -29,7 +29,11 @@ def lista_recetas(request):
 
 
 def semanal(request):
-        return render(request, 'semanal.html')
+        queryset = Receta.objects.all() #lista de los objetos
+        context = {
+                "lista_objetos" : queryset
+        }
+        return render(request, 'semanal.html',context)
 
 def resumen(request):
         return render(request, 'resumen.html')

@@ -109,18 +109,14 @@
             <div id="sendmessage">Mil gracias!</div>
             <div id="errormessage"></div>
             <form action="   " method="get" role="form" class="contactForm">
-
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Almuerzo" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Cena" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-
+                <select>
+                    {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+                </select>
+                <br>  <br>  <br>  <br>
+                <select>
+                    {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+                </select>
+                <br>  <br>
               <div class="text-center"><button type="submit">Enviar</button></div>
             </form>
           </div>
@@ -128,199 +124,97 @@
       </div>
     </div>
   </section>
-
-
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12 col-md-pull-4">
-            <h4 class="section-title" id="martes"> Martes</h4> </div>
-      </div>
-
-        <div class="col-md-5 ">
-          <div class="form">
-            <div id="sendmessage">Mil gracias!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Almuerzo" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Cena" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit">Enviar</button></div>
-            </form>
+  <!--==========================
+  Services Section
+  ============================-->
+  <section id="services">
+      <div class="container wow fadeInUp">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Resumen General</h3>
+            <div class="section-title-divider"></div>
+            </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-3 service-item">
+            <div class="service-icon"><i class="fa fa-cutlery"></i></div>
+            <h4 class="service-title"><a href="">Lunes</a></h4>
+            <p class="service-description">Almuerzo: <br> <select size="1">
+                {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+            </select>
+          <br>
+            Cena:  <br><select size="1">
+                {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+            </select></p>  
           </div>
-        </div>      
+          <div class="col-md-3 service-item">
+            <div class="service-icon"><i class="fa fa-cutlery"></i></div>
+            <h4 class="service-title"><a href="">Martes</a></h4>
+            <p class="service-description">Almuerzo:
+              <br>
+                Cena:</p>  </div>
+          <div class="col-md-3 service-item">
+            <div class="service-icon"><i class="fa fa-cutlery"></i></div>
+            <h4 class="service-title"><a href="">Miercoles</a></h4>
+            <p class="service-description">Almuerzo:
+              <br>
+                Cena:</p>  </div>
+          <div class="col-md-3 service-item">
+            <div class="service-icon"><i class="fa fa-cutlery"></i></div>
+            <h4 class="service-title"><a href="">Jueves</a></h4>
+            <p class="service-description">Almuerzo:
+              <br>
+                Cena:</p>  </div>
+  
+          
+  
+        </div>
+  
+        <div class="row">
+          <div class="col-md-3 service-item">
+            <div class="service-icon"><i class="fa fa-cutlery"></i></div>
+            <h4 class="service-title"><a href="">Viernes</a></h4>
+            <p class="service-description">Almuerzo:
+              <br>
+                Cena:</p>  </div>
+          <div class="col-md-3 service-item">
+            <div class="service-icon"><i class="fa fa-cutlery"></i></div>
+            <h4 class="service-title"><a href="">Sábado</a></h4>
+            <p class="service-description">Almuerzo:
+              <br>
+                Cena:</p>  </div>
+          <div class="col-md-3 service-item">
+            <div class="service-icon"><i class="fa fa-cutlery"></i></div>
+            <h4 class="service-title"><a href="">Domingo</a></h4>
+            <p class="service-description">Almuerzo:
+              <br>
+                Cena:</p>  </div>
+          
+  
+          
+  
+        </div>
+  
       </div>
-    </div>
-  </section>
-
-
-
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12 col-md-pull-4">
-            <h4 class="section-title" id="miercoles"> Miercoles</h4></div>
-      </div>
-
-        <div class="col-md-5 ">
-          <div class="form">
-            <div id="sendmessage">Mil gracias!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
+      <section id="hero">
+          <div class="hero-container">
+            <div class="wow fadeIn">
+              <div class="hero-logo">
+              
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Almuerzo" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
+      
+              <h1>Lista completa</h1>
+             <div class="actions">
+                <a href="#about" class="btn-get-started">Lista y costos PDF</a>
+                <a href="#services" class="btn-services">Vincular mercado cercano</a>
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Cena" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit">Enviar</button></div>
-            </form>
+            </div>
           </div>
-        </div>      
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12 col-md-pull-4">
-            <h4 class="section-title" id="jueves">  Jueves</h4> </div>
-      </div>
-
-        <div class="col-md-5">
-          <div class="form">
-            <div id="sendmessage">Mil gracias!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Almuerzo" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Cena" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit">Enviar</button></div>
-            </form>
-          </div>
-        </div>      
-      </div>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12 col-md-pull-4">
-            <h4 class="section-title" id="viernes"> Viernes</h4></div>
-      </div>
-
-        <div class="col-md-5">
-          <div class="form">
-            <div id="sendmessage">Mil gracias!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Almuerzo" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Cena" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit">Enviar</button></div>
-            </form>
-          </div>
-        </div>      
-      </div>
-    </div>
-  </section>
-
-
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12 col-md-pull-4">
-            <h4 class="section-title" id="sabado"> Sábado</h4></div>
-      </div>
-
-        <div class="col-md-5 ">
-          <div class="form">
-            <div id="sendmessage">Mil gracias!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Almuerzo" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Cena" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit">Enviar</button></div>
-            </form>
-          </div>
-        </div>      
-      </div>
-    </div>
-  </section>
-
-
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12 col-md-pull-4">
-            <h4 class="section-title" id="domingo"> Domingo</h4>
-      </div>
-
-        <div class="col-md-5 ">
-          <div class="form">
-            <div id="sendmessage">Mil gracias!</div>
-            <div id="errormessage"></div>
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="form-group">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Almuerzo" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Cena" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
-              </div>
-
-              <div class="text-center"><button type="submit">Enviar</button></div>
-            </form>
-          </div>
-        </div>      
-      </div>
-    </div>
-  </section>
+        </section>
+      
+    </section>
+  
 
   <!--==========================
   Footer
