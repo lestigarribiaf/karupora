@@ -83,50 +83,10 @@
 
 
  <!--==========================
-  SELECCION SEMANAL
+  resumen SEMANAL
   ============================-->
  
  
-  <section id="contact">
-    <div class="container wow fadeInUp">
-      <div class="row">
-        <div class="col-md-12 ">
-          <h3 class="section-title">{{ receta.nombre_receta }}</h3>
-          <div class="section-title-divider"></div>
-          <p class="section-description">La parte mas interesante de todo es que no vas a repetir tu menú.  </p>
-       
-        </div>
-      </div>
-      <div class="row">
-
-            <div class="col-md-12 col-md-pull-4">
-            <h4 class="section-title" id="#lunes"> Lunes</h4>
-          
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="form">
-            <div id="sendmessage">Mil gracias!</div>
-            <div id="errormessage"></div>
-            <form action="   " method="get" role="form" class="contactForm">
-                <select>
-                    {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
-                </select>
-                <br>  <br>  <br>  <br>
-                <select>
-                    {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
-                </select>
-                <br>  <br>
-              <div class="text-center"><button type="submit">Enviar</button></div>
-            </form>
-          </div>
-        </div>      
-      </div>
-    </div>
-  </section>
-  <!--==========================
-  Services Section
-  ============================-->
   <section id="services">
       <div class="container wow fadeInUp">
         <div class="row">
@@ -140,32 +100,45 @@
           <div class="col-md-3 service-item">
             <div class="service-icon"><i class="fa fa-cutlery"></i></div>
             <h4 class="service-title"><a href="">Lunes</a></h4>
-            <p class="service-description">Almuerzo: <br> <select size="1">
+            <p class="service-description">Almuerzo: <br> <select size="1" style="width: 200px;">
                 {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
             </select>
           <br>
-            Cena:  <br><select size="1">
+            Cena:  <br><select size="1" style="width: 200px;">
                 {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
             </select></p>  
           </div>
           <div class="col-md-3 service-item">
             <div class="service-icon"><i class="fa fa-cutlery"></i></div>
             <h4 class="service-title"><a href="">Martes</a></h4>
-            <p class="service-description">Almuerzo:
-              <br>
-                Cena:</p>  </div>
+            <p class="service-description">Almuerzo: <br> <select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select>
+        <br>
+          Cena:  <br><select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select></p>   
+              </div>
           <div class="col-md-3 service-item">
             <div class="service-icon"><i class="fa fa-cutlery"></i></div>
             <h4 class="service-title"><a href="">Miercoles</a></h4>
-            <p class="service-description">Almuerzo:
-              <br>
-                Cena:</p>  </div>
+            <p class="service-description">Almuerzo: <br> <select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select>
+        <br>
+          Cena:  <br><select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select></p>  </div>
           <div class="col-md-3 service-item">
             <div class="service-icon"><i class="fa fa-cutlery"></i></div>
             <h4 class="service-title"><a href="">Jueves</a></h4>
-            <p class="service-description">Almuerzo:
-              <br>
-                Cena:</p>  </div>
+            <p class="service-description">Almuerzo: <br> <select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select>
+        <br>
+          Cena:  <br><select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select></p>   </div>
   
           
   
@@ -175,21 +148,33 @@
           <div class="col-md-3 service-item">
             <div class="service-icon"><i class="fa fa-cutlery"></i></div>
             <h4 class="service-title"><a href="">Viernes</a></h4>
-            <p class="service-description">Almuerzo:
-              <br>
-                Cena:</p>  </div>
+            <p class="service-description">Almuerzo: <br> <select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select>
+        <br>
+          Cena:  <br><select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select></p>   </div>
           <div class="col-md-3 service-item">
             <div class="service-icon"><i class="fa fa-cutlery"></i></div>
             <h4 class="service-title"><a href="">Sábado</a></h4>
-            <p class="service-description">Almuerzo:
-              <br>
-                Cena:</p>  </div>
+            <p class="service-description">Almuerzo: <br> <select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select>
+        <br>
+          Cena:  <br><select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select></p>   </div>
           <div class="col-md-3 service-item">
             <div class="service-icon"><i class="fa fa-cutlery"></i></div>
             <h4 class="service-title"><a href="">Domingo</a></h4>
-            <p class="service-description">Almuerzo:
-              <br>
-                Cena:</p>  </div>
+            <p class="service-description">Almuerzo: <br> <select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select>
+        <br>
+          Cena:  <br><select size="1" style="width: 200px;">
+              {% for list in lista_objetos %} <option value="{{ list.nombre_receta }}">{{ list.nombre_receta }}</option> {% endfor %}
+          </select></p>   </div>
           
   
           
