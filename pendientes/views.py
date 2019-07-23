@@ -40,11 +40,5 @@ def receta_detalles(request, num):
 
         return render(request, 'vista_receta.html', {"receta":receta})
 
-def busqueda(request, buscar):
-        buscarte = Receta.objects.filter(nombre_receta__icontains=buscar)
-        print (buscarte)        
-
-        return render(request, 'semanal.html' , {"busquedaes":buscarte})
-
 
 

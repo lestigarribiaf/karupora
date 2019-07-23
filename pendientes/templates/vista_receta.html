@@ -102,7 +102,7 @@
           <div class="col-md-6 about-content">
             <h2 class="about-title">¿Qué vamos a necesitar?</h2>
             <p class="about-text">
-              ACA EN  TEORIA VAN A IR LA LISTA DE LOS INGREDIENTES
+              {% for ingrediente in receta.insumos.all %} {{ ingrediente }} <br> {% endfor %}
             </p>
             <p class="about-text">
               Cantidad de porciones: {{ receta.porciones }}
@@ -114,7 +114,7 @@
         <div class="col-md-12">
           <h3 class="section-title">¿Cómo lo preparamos?</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description">{{ receta.preparacion }}</p>
+          <p class="section-description">{{ receta.preparacion|linebreaks }}</p>
         </div>
       </div>
     </section>
