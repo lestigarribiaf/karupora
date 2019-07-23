@@ -2,29 +2,30 @@
 
 ### Sitio de Consultas de Recetas y Planeamiento Semanal > addons:
 
-* Listado de Recetas.
-* Vista de Recetas individual > Lista + preparacion + ingredientes
-* Planeamiento semanal.
-* Calculo de precios aproximados.
+* Listado de Recetas. LISTO
+* Vista de Recetas individual > Lista + preparacion + ingredientes EN PROCESO
+* Planeamiento semanal. EN PROCESO
+* Calculo de precios aproximados. SI SOBRA TIEMPO
 
 ### Objetivos de disenho: 
 
-* Cargar todas las skins. (Editar Textos, Subir imagenes)
-* Subida completa (complet)
-* Completado karupora 
- 
+* Cargar todas las skins. (Editar Textos, Subir imagenes) LISTO
+* Subida completa en facebook, instagram, y listado recetas LISTO 
+* 
+
 
 ### Objetivos de funcionalidad: 
 
-* Subir imagenes de la lista dentro del /admin
-* Trazar nueva template para Vista Receta Individual
-* Hacer que estire en el menu planificacion los valores de comidas + buscador
+* Subir imagenes de la lista dentro del /admin LISTO
+* Trazar nueva template para Vista Receta Individual LISTO
+* Hacer que estire en el menu planificacion los valores de comidas + buscador TODAVIA 
+* 
 
 ### Objetivos de Marketing: 
 
-* Portada / Subida de imagenes en el sitio
-* Invitar a tus amigos
-* Subir todas las fotex con nuestros rostros umia.
+* Portada / Subida de imagenes en el sitio LISTO
+* Invitar a tus amigos TODAVIA
+* Subir todas las fotex con nuestros rostros umia. EN PROCESO
 
 ### Pasos que se siguieron para llegar a este punto
 * En la terminal:

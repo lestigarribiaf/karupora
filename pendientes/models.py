@@ -31,6 +31,7 @@ class Receta(models.Model):
     porciones = models.IntegerField(null=True, blank=True)
     insumos = models.ManyToManyField(Insumo)
     imagen = models.ImageField(upload_to='foto_post', blank=True, null=True, )
+    preparacion = models.TextField(null=True, blank=True)
    # externalURL = models.URLField(blank=True)
     
 #    def url(self):
