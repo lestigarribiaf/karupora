@@ -1,4 +1,4 @@
-from django.shortcuts import render
+gifrom django.shortcuts import render
 from django.http import HttpResponse
 from pendientes.models import Receta
 # Create your views here.
@@ -30,6 +30,10 @@ def lista_recetas(request):
 
 def semanal(request):
         return render(request, 'semanal.html')
+
+def resumen(request):
+        return render(request, 'resumen.html')
+
 
 
 def receta_detalles(request, num):
