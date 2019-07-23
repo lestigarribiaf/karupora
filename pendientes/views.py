@@ -1,4 +1,4 @@
-gifrom django.shortcuts import render
+from django.shortcuts import render
 from django.http import HttpResponse
 from pendientes.models import Receta
 # Create your views here.
