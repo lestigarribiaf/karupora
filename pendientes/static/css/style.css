@@ -1,9 +1,4 @@
-/*
-  Theme Name: Imperial
-  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-template/
-  Author: BootstrapMade
-  Author URL: https://bootstrapmade.com
-*/
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -14,12 +9,17 @@ body {
 }
 
 a {
-  color: #03C4EB;
+  color: rgb(240, 4, 4);
   transition: 0.5s;
 }
-
+/*
+  Theme Name: Imperial
+  Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-template/
+  Author: BootstrapMade
+  Author URL: https://bootstrapmade.com
+*/
 a:hover, a:active, a:focus {
-  color: #03c5ec;
+  color: rgb(240, 4, 4);
   outline: none;
   text-decoration: none;
 }
@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:hover {
-  background: #03C4EB;
+  background: rgb(240, 4, 4);
   color: #fff;
 }
 
@@ -162,8 +162,8 @@ background: url(../img/hero-bg.jpg)top center;
 }
 
 #hero .btn-get-started {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: rgb(196, 4, 4);
+  border: 2px solid rgb(196, 4, 4);
   color: #fff;
 }
 
@@ -179,8 +179,8 @@ background: url(../img/hero-bg.jpg)top center;
 }
 
 #hero .btn-services:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: rgb(196, 4, 4);
+  border: 2px solid rgb(196, 4, 4);
 }
 
 /*--------------------------------------------------------------
@@ -317,7 +317,7 @@ background: url(../img/hero-bg.jpg)top center;
 }
 
 .nav-menu a:hover, .nav-menu li:hover > a, .nav-menu .menu-active > a {
-  color: #03C4EB;
+  color: rgb(240, 4, 4);
 }
 
 .nav-menu ul {
@@ -425,11 +425,11 @@ background: url(../img/hero-bg.jpg)top center;
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #03C4EB;
+  color: rgb(240, 4, 4);
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #03C4EB;
+  color: rgb(240, 4, 4);
 }
 
 #mobile-body-overly {
@@ -477,7 +477,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .section-title-divider {
   width: 50px;
   height: 3px;
-  background: #03C4EB;
+  background: rgb(240, 4, 4);
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -540,11 +540,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #services .service-icon {
   float: left;
-  background: #03C4EB;
+  background: rgb(196, 4, 4);
   padding: 16px;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #03C4EB;
+  border: 1px solid rgb(196, 4, 4);
 }
 
 #services .service-icon i {
@@ -557,7 +557,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .service-item:hover .service-icon i {
-  color: #03C4EB;
+  color: rgb(240, 4, 4);
 }
 
 #services .service-title {
@@ -615,8 +615,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #subscribe .subscribe-btn:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
+  background: rgb(240, 4, 4);
+  border: 2px solidrgb(240, 4, 4);
 }
 
 /* Portfolio Section
@@ -777,7 +777,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social a:hover {
-  color: #03C4EB;
+  color: rgb(240, 4, 4);
 }
 
 #team .member .social i {
@@ -798,7 +798,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .info i {
   font-size: 32px;
-  color: #03C4EB;
+  color: rgb(196, 4, 4);
   float: left;
 }
 
@@ -808,8 +808,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form #sendmessage {
-  color: #03C4EB;
-  border: 1px solid #03C4EB;
+  color: rgb(196, 4, 4);
+  border: 1px solid rgb(196, 4, 4);
   display: none;
   text-align: center;
   padding: 15px;
@@ -845,7 +845,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"] {
-  background: #03C4EB;
+  background: rgb(196, 4, 4);
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -853,7 +853,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .form button[type="submit"]:hover {
-  background: #25d8fc;
+  background: rgb(240, 4, 4);
 }
 
 /*--------------------------------------------------------------
