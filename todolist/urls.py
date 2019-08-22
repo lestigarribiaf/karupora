@@ -31,6 +31,6 @@ urlpatterns = [
     path('semanal/', views.semanal, name='semanal'),
     path('resumen/', views.resumen, name='resumen'),
     path('busqueda/', views.busqueda, name='lista_busqueda'),
-    
+    path('impresion', views.impresion, name='impresion'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

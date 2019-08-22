@@ -1,0 +1,114 @@
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Karu, Paraguay</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description"> <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="/static/favicon.ico" rel="shortcut icon">
+  {% load static %}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate-css/animate.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Imperial
+    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  
+</head>
+
+<body>
+ <!--==========================
+  Header Section
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="/recetas"><img src="/static/img/logo3.png" alt="logo Karu" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        
+        <ul class="nav-menu">
+          <li ><a href="#hero">Inicio</a></li>
+          <li><a href="#portfolio">Tradicionales del Paraguay</a></li>
+          <li><a href="#about">Hablemos más</a></li>
+          <li><a href="#team">Equipo Karu</a></li>         
+          <li><a href="/lista_recetas">Lista Recetas</a></li>
+          <li class="menu-active"><a href="/semanal">Elegi tu Menu</a></li>
+          <li><a href="/registro">Registro</a></li>
+          
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+<!--==========================
+  Testimonials Section
+  ============================-->
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Testimonials</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Erdo lide, nora porodo filece, salvam esse se, quod concedimus ses haec dicturum fuisse</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-1.jpg" alt=""></div>
+            <h4>Saul Goodman</h4>
+            <span>Lawless Inc</span>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> {{ almuerzo_lunes }}. <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-9">
+          <div class="quote">
+            <b><img src="img/quote_sign_left.png" alt=""></b> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis architecto beatae. <small><img src="img/quote_sign_right.png" alt=""></small>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="profile">
+            <div class="pic"><img src="img/client-2.jpg" alt=""></div>
+            <h4>Sara Wilsson</h4>
+            <span>Odeo Inc</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <h1> </h1>
+  <h1> {{ almuerzo_lunes }} </h1>
+  <h1> {{ cena_martes }} </h1>
+
+</body>
+</html>

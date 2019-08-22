@@ -25,6 +25,7 @@ def lista_recetas(request):
         context = {
                 "lista_objetos" : queryset
         }
+        print(queryset)
         return render(request, 'lista_recetas.html', context)
 
 
@@ -51,3 +52,16 @@ def busqueda(request, buscar):
         return render(request, 'semanal.html' , {"busquedaes":buscarte})
 
 
+def impresion(request):
+        datos=request.POST 
+        cena_lunes = datos.get("cenaLunes")
+        almuerzo_lunes = datos.get("almuerzoLunes")
+        cena_martes = datos.get("cenaMartes")
+        print(cena_lunes)
+        context = {
+                "cena_lunes" : cena_lunes , 
+                "almuerzo_lunes": almuerzo_lunes,
+                "cena_martes" : cena_martes
+                }
+        
+        return render(request, 'impresion.html', context)
