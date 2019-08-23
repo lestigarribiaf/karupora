@@ -57,11 +57,33 @@ def impresion(request):
         cena_lunes = datos.get("cenaLunes")
         almuerzo_lunes = datos.get("almuerzoLunes")
         cena_martes = datos.get("cenaMartes")
+        almuerzo_martes = datos.get("almuerzoMartes")
+        almuerzo_miercoles = datos.get("almuerzoMartes")
+        cena_miercoles = datos.get("cenaMiercoles")
+        almuerzo_jueves = datos.get("almuerzoJueves")
+        cena_jueves = datos.get("cenaJueves")
+        almuerzo_viernes = datos.get("almuerzoViernes")
+        cena_viernes = datos.get("cenaViernes")
+        almuerzo_sabado = datos.get("almuerzoSabado")
+        cena_sabado = datos.get("cenaSabado")
+        almuerzo_domingo = datos.get("almuerzoDomingo")
+        cena_domingo = datos.get("cenaDomingo")
         print(cena_lunes)
         context = {
-                "cena_lunes" : cena_lunes , 
-                "almuerzo_lunes": almuerzo_lunes,
-                "cena_martes" : cena_martes
+                "almuerzo_lunes" : almuerzo_lunes , 
+                "cena_lunes": cena_lunes,
+                "almuerzo_martes" : almuerzo_martes,
+                "cena_martes" : cena_martes,
+                "almuerzo_miercoles" : almuerzo_miercoles,
+                "cena_miercoles" : cena_miercoles,
+                "almuerzo_jueves" : almuerzo_jueves,
+                "cena_jueves" : cena_jueves,
+                "almuerzo_viernes" : almuerzo_viernes,
+                "cena_viernes" : cena_viernes,
+                "almuerzo_sabado" : almuerzo_sabado,
+                "cena_sabado" : cena_sabado,
+                "almuerzo_domingo" : almuerzo_domingo,
+                "cena_domingo" : cena_domingo,
                 }
         
         return render(request, 'impresion.html', context)
