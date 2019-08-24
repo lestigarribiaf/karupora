@@ -29,7 +29,6 @@ urlpatterns = [
     path('lista_recetas/', views.lista_recetas, name='lista_recetas'),
     path('recetas/<int:num>', views.receta_detalles, name="vista_recetas"),
     path('semanal/', views.semanal, name='semanal'),
-    path('resumen/', views.resumen, name='resumen'),
     path('busqueda/', views.busqueda, name='lista_busqueda'),
     path('impresion', views.impresion, name='impresion'),
 

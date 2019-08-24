@@ -7,7 +7,7 @@ def index(request):
     usuario = request.GET.get("user")
     print(request.GET)
     saludo = "<h1> Hola, Mundo! </h1> Esta es la raiz "
-    return HttpResponse(usuario) #retornamos el saludo
+    return HttpResponse(saludo) #retornamos el saludo
 
 def recetas(request):
     lista = Receta.objects.all()
@@ -36,10 +36,6 @@ def semanal(request):
         }
         return render(request, 'semanal.html',context)
 
-def resumen(request):
-        return render(request, 'resumen.html')
-
-
 def receta_detalles(request, num):
         receta = Receta.objects.get(id=num)
 
@@ -54,11 +50,12 @@ def busqueda(request, buscar):
 
 def impresion(request):
         datos=request.POST 
+        print(datos)
         cena_lunes = datos.get("cenaLunes")
         almuerzo_lunes = datos.get("almuerzoLunes")
         cena_martes = datos.get("cenaMartes")
         almuerzo_martes = datos.get("almuerzoMartes")
-        almuerzo_miercoles = datos.get("almuerzoMartes")
+        almuerzo_miercoles = datos.get("almuerzoMiercoles")
         cena_miercoles = datos.get("cenaMiercoles")
         almuerzo_jueves = datos.get("almuerzoJueves")
         cena_jueves = datos.get("cenaJueves")
@@ -68,7 +65,6 @@ def impresion(request):
         cena_sabado = datos.get("cenaSabado")
         almuerzo_domingo = datos.get("almuerzoDomingo")
         cena_domingo = datos.get("cenaDomingo")
-        print(cena_lunes)
         context = {
                 "almuerzo_lunes" : almuerzo_lunes , 
                 "cena_lunes": cena_lunes,

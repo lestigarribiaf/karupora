@@ -20,14 +20,26 @@
 
   <!-- Main Stylesheet File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
-
+  <script language="javascript">
+    function printdiv(printpage)
+    {
+    var headstr = "<html><head><title></title></head><body>";
+    var footstr = "</body>";
+    var newstr = document.all.item(printpage).innerHTML;
+    var oldstr = document.body.innerHTML;
+    document.body.innerHTML = headstr+newstr+footstr;
+    window.print();
+    document.body.innerHTML = oldstr;
+    return false;
+    }
+  </script>
   <!-- =======================================================
     Theme Name: Imperial
     Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
     Author: BootstrapMade.com
     Author URL: https://bootstrapmade.com
   ======================================================= -->
-  <style>
+  <style type="text/css">
     table {
       font-family: arial, sans-serif;
       border-collapse: collapse;
@@ -41,9 +53,10 @@
     }
     
     tr:nth-child(even) {
-      background-color: #dddddd;
-    }
+      background-color: #dddddd; }
+
     </style>
+
 </head>
 
 <body>
@@ -78,17 +91,18 @@
   <!-- #header -->
 <!--==========================
   Testimonials Section
-  ============================-->
+  ============================--><div id="div_print">
   <section id="testimonials">
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
           <h3 class="section-title">TU MENÚ KARU</h3>
           <div class="section-title-divider"></div>
-          <p class="section-description"> Te dejamos el fruto de tu selección semanal: </p>
+          <p class="section-description"> Te dejamos el fruto de tu seleccion semanal: </p>
+          
         </div>
       </div>
-
+  <div>
       <table>
         <tr>
           <th>Día</th>
@@ -131,9 +145,56 @@
           <td>{{ cena_domingo }}</td>
         </tr>
       </table>
-
+      
     </div>
-  </section>
+    </div>
+  </div>
+  <br>      <br>
+  <p class="section-description"> Si queres podes imprimir esta lista: </p>
 
+  <center><input name="b_print" type="button" class="ipt"   onClick="printdiv('div_print');" value=" Haciendo Clic Aca "></center>
+  
+  <br>      <br></section>
+
+  
+  
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>Team Karu Paraguay</strong>. TODOS los derechos reservados TOODOS! (los izquierdos tambien)
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+            -->
+            Designed by <a href="https://bootstrapmade.com/">Karu atyguasu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="/static/lib/jquery/jquery.min.js"></script>
+  <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/static/lib/superfish/hoverIntent.js"></script>
+  <script src="/static/lib/superfish/superfish.min.js"></script>
+  <script src="/static/lib/morphext/morphext.min.js"></script>
+  <script src="/static/lib/wow/wow.min.js"></script>
+  <script src="/static/lib/stickyjs/sticky.js"></script>
+  <script src="/static/lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="/static/js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
 </body>
 </html>
