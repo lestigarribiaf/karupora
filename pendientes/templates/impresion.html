@@ -1,0 +1,200 @@
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Karu, Paraguay</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description"> <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="/static/favicon.ico" rel="shortcut icon">
+  {% load static %}
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="{% static 'lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="{% static 'lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+  <link href="{% static 'lib/animate-css/animate.min.css' %}" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+  <script language="javascript">
+    function printdiv(printpage)
+    {
+    var headstr = "<html><head><title></title></head><body>";
+    var footstr = "</body>";
+    var newstr = document.all.item(printpage).innerHTML;
+    var oldstr = document.body.innerHTML;
+    document.body.innerHTML = headstr+newstr+footstr;
+    window.print();
+    document.body.innerHTML = oldstr;
+    return false;
+    }
+  </script>
+  <!-- =======================================================
+    Theme Name: Imperial
+    Theme URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  <style type="text/css">
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd; }
+
+    </style>
+
+</head>
+
+<body>
+ <!--==========================
+  Header Section
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <a href="/recetas"><img src="/static/img/logo3.png" alt="logo Karu" /></img></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        
+        <ul class="nav-menu">
+          <li ><a href="#hero">Inicio</a></li>
+          <li><a href="#portfolio">Tradicionales del Paraguay</a></li>
+          <li><a href="#about">Hablemos más</a></li>
+          <li><a href="#team">Equipo Karu</a></li>         
+          <li><a href="/lista_recetas">Lista Recetas</a></li>
+          <li class="menu-active"><a href="/semanal">Elegi tu Menu</a></li>
+          <li><a href="/registro">Registro</a></li>
+          
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
+<!--==========================
+  Testimonials Section
+  ============================--><div id="div_print">
+  <section id="testimonials">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">TU MENÚ KARU</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description"> Te dejamos el fruto de tu seleccion semanal: </p>
+          
+        </div>
+      </div>
+  <div>
+      <table>
+        <tr>
+          <th>Día</th>
+          <th>Almuerzo</th>
+          <th>Cena</th>
+        </tr>
+        <tr>
+          <td>Lunes</td>
+          <td>{{ almuerzo_lunes }}</td>
+          <td>{{ cena_lunes }}</td>
+        </tr>
+        <tr>
+          <td>Martes</td>
+          <td>{{ almuerzo_martes }}</td>
+          <td>{{ cena_martes }}</td>
+        </tr>
+        <tr>
+          <td>Miércoles</td>
+          <td>{{ almuerzo_miercoles }}</td>
+          <td>{{ cena_miercoles }}</td>
+        </tr>
+        <tr>
+          <td>Jueves</td>
+          <td>{{ almuerzo_jueves }}</td>
+          <td>{{ cena_jueves }}</td>
+        </tr>
+        <tr>
+          <td>Viernes</td>
+          <td>{{ almuerzo_viernes }}</td>
+          <td>{{ cena_viernes }}</td>
+        </tr>
+        <tr>
+          <td>Sábado</td>
+          <td>{{ almuerzo_sabado }}</td>
+          <td>{{ cena_sabado }}</td>
+        </tr>
+        <tr>
+          <td>Domingo</td>
+          <td>{{ almuerzo_domingo }}</td>
+          <td>{{ cena_domingo }}</td>
+        </tr>
+      </table>
+      
+    </div>
+    </div>
+  </div>
+  <br>      <br>
+  <p class="section-description"> Si queres podes imprimir esta lista: </p>
+
+  <center><input name="b_print" type="button" class="ipt"   onClick="printdiv('div_print');" value=" Haciendo Clic Aca "></center>
+  
+  <br>      <br></section>
+
+  
+  
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>Team Karu Paraguay</strong>. TODOS los derechos reservados TOODOS! (los izquierdos tambien)
+          </div>
+          <div class="credits">
+            <!--
+              All the links in the footer should remain intact.
+              You can delete the links only if you purchased the pro version.
+              Licensing information: https://bootstrapmade.com/license/
+              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+            -->
+            Designed by <a href="https://bootstrapmade.com/">Karu atyguasu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="/static/lib/jquery/jquery.min.js"></script>
+  <script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="/static/lib/superfish/hoverIntent.js"></script>
+  <script src="/static/lib/superfish/superfish.min.js"></script>
+  <script src="/static/lib/morphext/morphext.min.js"></script>
+  <script src="/static/lib/wow/wow.min.js"></script>
+  <script src="/static/lib/stickyjs/sticky.js"></script>
+  <script src="/static/lib/easing/easing.js"></script>
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="/static/js/custom.js"></script>
+
+  <script src="contactform/contactform.js"></script>
+</body>
+</html>
