@@ -4,14 +4,14 @@
     <title>Karu</title>
   </head>
   <body>
-    {% extends 'main_template.html'%} 
+    {% extends 'main_template.html' %}
     
 	{% block content %}	
 	{% load static %}
-	<img src="static/images/firefox-icon.png" alt="Mi imagen de prueba">
 	{% for x in name %}
-        <li> {{ x }} </li>
+        <li> {{ x.insumos }} </li>
     {% endfor %}
-	{% endblock content %}	
+  {% endblock content %}	
+  {{ kore }}
   </body>
 </html>

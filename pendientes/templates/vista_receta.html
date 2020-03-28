@@ -97,17 +97,43 @@
         <div class="row">
   
           <div class="col-lg-6 about-img">
-            <img width="800" height="433" src="/media/{{ receta.imagen }}" alt="">
+            <img width="800" height="390" src="/media/{{ receta.imagen }}" alt="">
           </div>
   
           <div class="col-md-6 about-content">
             <h2 class="about-title">¿Qué vamos a necesitar?</h2>
-            <p class="about-text">
+            <!-- <p class="about-text">
               {% for ingrediente in receta.insumos.all %} {{ ingrediente }} <br> {% endfor %}
             </p>
             <p class="about-text">
               Cantidad de porciones: {{ receta.porciones }}
-            </p>
+            </p> -->
+            <!-- LOGRE MULTIPLICAR HIJODEPUTAAA            
+              <p class="about-text">
+              Para 2 personas: 
+              {% for x in totalx2 %}  <br> : {{ x }} {% endfor %} 
+              </p>
+              <p class="about-text">Para 10 personas: 
+              {% for x in totalx10 %} <br> : {{ x }}  {% endfor %} 
+              </p>-->
+              <div class="table-wrapper">
+              <table>
+                <thead>
+                  <tr>
+                    <th>1 PORCIÓN</th>
+                    <th>2 PORCIONES</th>
+                    <th>10 PORCIONES</th>
+                  </tr>
+                </thead>
+                <tbody>{% for ingrediente in receta.insumos.all %} 
+                  <tr>
+                    <td>   {{ ingrediente }} </td>
+                    <td>  {{ dictionario.totalx2 }} </td>
+                    <td> {{ dictionario.totalx10 }}</td>
+                  </tr>{% endfor %} 
+                  
+              </table>
+            </div>
             </div>
         </div>
         <br>

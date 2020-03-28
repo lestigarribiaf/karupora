@@ -12,9 +12,6 @@ def index(request):
 def recetas(request):
     lista = Receta.objects.all()
     listita = {'name':lista}
-    recorrido = 0
-    for x in lista:
-        recorrido = x
     return render(request, 'index.html', listita)
 
 def registro(request):
@@ -28,6 +25,13 @@ def lista_recetas(request):
         print(queryset)
         return render(request, 'lista_recetas.html', context)
 
+def main_Template(request): #Pagina que va a mostar algunos elementos cargados en el index
+        queryset = Receta.objects.all() #lista de los objetos
+        context = {
+                "lista_objetos" : queryset
+        }
+        print(queryset)
+        return render(request, 'maintemplate.html', context)
 
 def semanal(request):
         queryset = Receta.objects.all() #lista de los objetos
@@ -38,8 +42,21 @@ def semanal(request):
 
 def receta_detalles(request, num):
         receta = Receta.objects.get(id=num)
-
-        return render(request, 'vista_receta.html', {"receta":receta})
+        cantidad_total = []
+        for ingrediente in receta.insumos.all():
+                #Descubri ACA COMO SE CONECTA CON EL VISTARECETA.HTML Y SU MODELS ES INSUMO.
+                cantidad_total.append(ingrediente.cantidad_insumo)
+                print(cantidad_total) #Veo que existe la lista 
+        mult2= 0
+        for x in cantidad_total: #Recorro uno por uno
+                mult2 = x * 2 
+                
+        mult10=0
+        for x in cantidad_total: #DESCUBRI QUE SOLO ME MUESTRA EL ULTIMO DATO DEL FOR. WHY? NPI
+                #AVERIGUARCOMO ARREGLAR MAÑANA
+                mult10 = x * 10
+                        
+        return render(request, 'vista_receta.html', {'receta':receta, 'dictionario':{'totalx2':mult2, 'totalx10': mult10} })
 
 def busqueda(request, buscar):
         buscarte = Receta.objects.filter(nombre_receta__icontains=buscar)
