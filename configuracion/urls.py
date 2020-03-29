@@ -23,7 +23,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'), #Creamos la ruta raiz '' gy la enlazamos con nuestra vista index del archivo views.py
+    path('', views.recetas, name='index'), #Creamos la ruta raiz '' gy la enlazamos con nuestra vista index del archivo views.py
     path('recetas/', views.recetas, name='recetas'),
     path('registro/', views.registro, name='registro'),
     path('lista_recetas/', views.lista_recetas, name='lista_recetas'),
